@@ -1,12 +1,18 @@
 public class Program {
     public static void main(String[] args) {
-        int number = 479598;
-        int sum = 0;
 
-        while (num > 0){
-            sum += number % 10;
-            number /= 10;
+        int result;
+
+
+        int num = 479598;
+        int sum = 0;
+        result = 0;
+
+        while (num > 0)
+        {
+            result = result + num % 10;
+            num = num / 10;
         }
-        System.out.println(sum);
+        System.out.println(result);
     }
 }
