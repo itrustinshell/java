@@ -1,0 +1,24 @@
+- static
+quando usi un metodo static in una classe 
+(anche se la classe non è static), ebbene quel
+metodo si riferisce a tutta la classe.
+Quindi al suo interno non utilizzare la keyword
+this perchè il suo ambiente è static.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

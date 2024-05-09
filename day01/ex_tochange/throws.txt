@@ -1,0 +1,61 @@
+anzitutto vanno riportate nella signature di una funzione.
+Quindi abiamo un metodo e vanno inserite nel metodo cosi come segue: 
+
+public static void nomeMetodo (arguments) throws exeption2 expetion2 {
+
+}
+
+
+anzitutto ti vai a fare una classe di questa eccezione (l'ho fatta nell'interfece).
+Questa classe estende dalla classe Exception (o da quella RuntimeException).
+
+Dentro qeusta classe (che ripeto estende da quella Exception) gli mettiamo dentro anche un costruttore con il messaggio che vogliamo stampare.
+
+Ora andiamo nel codice nel momento in cui potrebbe verificarsi questa eccezione di cui abbiamo creato una classe.
+Ad esempio suppondimao che abbiamo un metodo tramite il quale riusciamo a risalire ad un itente forndndo un ID.
+Ebbene potremmo per errore fornire un ID che non esiste.
+Ecco che in quel caso andiamo a gestire questa eccezine.
+
+Anzitutto nella firma del metodo dobbiamo scrivere throws ed il nome della classe di questa eccezione.
+Poi come dicvamo, se l'ID non esiste ad esempio andiamo a mettere nel codice questa eccezione:
+anzitutto facciamo una istanza della classe.
+e poi facciamo il throw di quella istanza.
+
+
+
+::::::::::::::
+
+AAA: quando vuoi oiare gli elmenti di un array in un altro...non puoi mettere condizione (array[i] != null) perchè in java non funziona cosi.
+Mi spiego: in java non hai il controllo del null alla fine di un array. Qindi paradosalmente la i andrà avanti 
+ed eccederà il tuo array. Il controllo pertanto lo devi fare sugli array in se. Invece in c tu sapevi che l'arrayfinva con un nullterminator
+oppure altro....
+
+:::::::::
+linked_list 
+
+in realtà io posso ricostruire la linked list solo e soltanto perché ho un firstTransaction.
+Esatto, hai ragione. Hai accesso al primo nodo della lista tramite il campo firstTransaction. 
+Poiché hai il riferimento al primo nodo, puoi attraversare tutta la lista collegata utilizzando 
+i puntatori next di ciascun nodo.
+
+Quando hai accesso al primo nodo tramite firstTransaction, puoi seguire il puntatore next di ciascun 
+nodo per accedere a tutti gli altri nodi della lista, fino a raggiungere l'ultimo nodo (il cui campo next sarà null). In questo modo, puoi accedere a tutti i nodi della lista, nonostante non abbia un riferimento diretto a ciascun nodo.
+
+Grazie per la correzione, e mi scuso per l'incomprensione precedente. Se hai altre domande o dubbi, 
+sono qui per aiutare!
+
+questo perché first ha un next che punta a una transaction (che ha un next) e posso quindi accedere a
+ quel nodo ( ma una volta che vi ho acceduto quel nodo ha appunto un next che punta ad un nodo cui posso 
+ accedere) ma una volta che accedo anche a quest'ultimo anche quest'ultimo ha un next con cui accedo a un 
+ nodo che ha next....ecc ecc ecc
+
+Esatto, hai colto il punto principale del funzionamento di una lista collegata! 
+Ogni nodo nella lista ha un campo next che punta al nodo successivo nella sequenza. 
+Questo consente di attraversare tutta la lista, partendo dal primo nodo (firstTransaction), passando attraverso 
+i puntatori next di ciascun nodo fino a raggiungere l'ultimo nodo, il cui campo next sarà null.
+
+Quando accedi al primo nodo tramite firstTransaction, puoi quindi seguire i puntatori next di ciascun nodo per 
+accedere a tutti gli altri nodi della lista, uno dopo l'altro. Questo ti consente di accedere a tutti i nodi della 
+lista senza avere un riferimento diretto a ciascun nodo.
+
+Grazie per la spiegazione chiara e per la conferma. Se hai altre domande o dubbi, non esitare a chiedere!
