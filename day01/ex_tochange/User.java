@@ -9,7 +9,7 @@ public class User {
 
     public User (String theName, Integer TheBalance)
     {
-        this.Identifier = UserIdsGenerator.getInstanceId().generateId();
+        this.Identifier = UserIdsGenerator.getInstance().generateId();
         this.Name = theName;
         if (TheBalance < 0)
         {

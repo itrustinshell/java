@@ -1,8 +1,6 @@
 
 
 public class Program {
-    
-   
     public static void main(String[] args)
     {
         //user with balance > 0
@@ -15,9 +13,9 @@ public class Program {
 
 
        //Example for valid transaction
-	    Transaction transaction1 = new Transaction(Transaction.Category.credit, 100);
+	    Transaction transaction1 = new Transaction(Transaction.Category.CREDIT, 100);
 	//Example of invalid transaction
-	    Transaction transaction2 = new Transaction(Transaction.Category.credit, -100);
+	    Transaction transaction2 = new Transaction(Transaction.Category.DEBIT, -100);
 
     }
 }

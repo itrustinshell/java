@@ -11,12 +11,4 @@ class TransactionsLinkedList implements TransactionsList {
         }
         currentTransaction = newTransaction;
     }
-
-    /*
-    removeTransactionById(UUID id){
-    }
-    transformListIntoArray(ex. listof Transaction[] into Array(){
- 
-    }
-    */
 }
