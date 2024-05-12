@@ -8,6 +8,59 @@ this perchè il suo ambiente è static.
 
 
 
+#######################
+#		     #
+# INPUT/OUTPUT STREAM #
+#		     #
+#######################
+InputStream e OutputStream sono due classi abstract.
+Pertanto non possono essere installiate ma servono solo da blueprint per altre classe.
+Ad esempio la classe abstract animal, serve da blue print per la classi cane e gatto.
+
+InputStream and FileInputStream are related but serve different purposes:
+
+InputStream: This is an abstract class representing an input stream of bytes. It provides a common interface for reading bytes from any kind of input source, such as files, network connections, byte arrays, etc. Subclasses of InputStream implement specific behaviors for reading bytes from different sources.
+
+FileInputStream: This is a concrete subclass of InputStream specifically designed for reading bytes from a file. It reads bytes from a file in the file system. FileInputStream is often used when you need to read data from a file on disk.
+
+Il read() di questa classe restituisce un flusso di bytes. Quindi non vedrai i caratteri ascii stampati benesi il numero corrispondente della tabella ascii. Quel numero infatti rappresenta il byte letto che può oscillare da 0 a 255....Infatti con un byte (=8bits) puoi rappresentare 256 valori, ovvero da 00000000 a 11111111 (se vuoi approfondire considera anche che i 256 posso andare anche in un range negativo che trova lo 0 (zero) a metà.
+
+Quando utilizzi read() con FileInputStream, stai leggendo byte grezzi dal file (rows data). Ogni numero che vedi rappresenta il valore del byte in quella posizione nel file. Questi byte potrebbero includere effettivamente la firma del file o il numero magico, ma dovrai implementare ulteriori logiche per interpretare questi byte e determinare se corrispondono alle firme conosciute per tipi di file specifici.
+AAA: la funzione read restituisce il numero di byte letti oppure restituisce -1 se non ha più nulla da leggere.
+Ovviamente se provi a leggere con un altro buffer mentre hai letto ad esempio tutto il file con un precedente buffer...ebbene come ritorno avrai sempre -1. Dovrai infatti prima chiudere il file...poi al massimo riaprirlo....e quindi leggere con il nuovo buffer.
+
+
+###########################
+#		         #
+# SUPER CLASS & SUB CLASS #
+#		         #
+###########################
+La Super Class è quella che viene usata come blueprint. Cioè è quella da cui altre ereditano. Oppure è quella usata da altre classi che la estendono. In tal caso le altre classi sono dette subclass.
+
+
+#######################
+#		     #
+# JAVA COLLECTION API #
+#		     #
+#######################
+The Java Collections API provides a set of interfaces and classes to handle collections of objects in Java.
+The Java Collections API is a framework that provides a set of interfaces (abstract data types) and classes to handle collections of objects in Java. It's part of the Java Platform Standard Edition (Java SE) and is located in the java.util package.
+
+Here's a brief overview of some key interfaces and classes:
+
+List: Represents an ordered collection of elements. Elements can be accessed by their index. Implementations include ArrayList, LinkedList, etc.
+
+Map: Represents a collection of key-value pairs where each key is associated with a value. Implementations include HashMap, TreeMap, etc.
+
+Set: Represents a collection of unique elements. Implementations include HashSet, TreeSet, etc.
+
+Queue: Represents a collection designed for holding elements prior to processing. Implementations include LinkedList, PriorityQueue, etc.
+
+Deque: Represents a double-ended queue. Implementations include ArrayDeque.
+
+These interfaces and classes allow you to manipulate collections of objects efficiently in Java. They provide various methods to add, remove, search, and iterate over elements in the collections.
+
+For example, you can use a List to store a sequence of elements, a Map to store key-value pairs for efficient lookup, and so on. Here's a simple example of using a List and a Map:
 
 
 
@@ -15,10 +68,7 @@ this perchè il suo ambiente è static.
 
 
 
-
-
-
-
-
-
-.
+Approfondire:
+Il buffer di read() in FileInputStream
+IOException
+Da implementare trasformazione in hex
