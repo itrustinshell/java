@@ -1,6 +1,10 @@
 
 import java.util.Scanner;
 
+import ex00.User;
+import ex03.TransactionsList;
+import ex03.UserIdsGenerator;
+
 public class User {
     Integer Identifier;
     String Name;

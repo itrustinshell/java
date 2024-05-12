@@ -1,3 +1,5 @@
+import ex03.UserIdsGenerator;
+
 public class UserIdsGenerator {
 
     private static UserIdsGenerator userId;

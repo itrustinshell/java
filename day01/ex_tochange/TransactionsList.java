@@ -1,5 +1,7 @@
 import java.util.UUID;
 
+import ex00.Transaction;
+
 interface TransactionsList  {
     public void addTransaction(Transaction transaction);
     /* 

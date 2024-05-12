@@ -1,3 +1,5 @@
+import ex00.User;
+
 interface UsersListInterface {
     public void Add_user(User person);
     public User RetrieveUserById(Integer id) throws UserNotFoundException;

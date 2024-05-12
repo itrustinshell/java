@@ -1,3 +1,8 @@
+
+package ex03;
+
+
+
 public class UserIdsGenerator {
   private Integer Id = 0;
   private static UserIdsGenerator instance;

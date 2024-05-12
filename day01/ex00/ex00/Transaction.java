@@ -1,3 +1,5 @@
+package ex00;
+
 import java.util.UUID;
 
 public class Transaction {
@@ -10,7 +12,7 @@ public class Transaction {
 		DEBIT
 	}
 
-    private boolean set_amount(Category cat, Integer money)
+    public boolean set_amount(Category cat, Integer money)
 	{
 		boolean check_money;
 		check_money = true;

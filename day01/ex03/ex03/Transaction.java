@@ -1,8 +1,6 @@
 
+package ex03;
 import java.util.UUID;
-
-import ex00.Transaction;
-import ex00.User;
 
 public class Transaction {
     UUID Identifier;
@@ -12,9 +10,9 @@ public class Transaction {
     String credits;
     Integer amount;
     Transaction next;
-
+    Transaction prev;
     public Transaction(Integer ctorAmount) {
         this.amount = ctorAmount;
+        this.Identifier = UUID.randomUUID();
     }
 }
-

@@ -1,3 +1,4 @@
+package ex00;
 
 public class User {
     Integer Identifier;

@@ -1,3 +1,7 @@
+import ex00.Transaction;
+import ex00.User;
+import ex03.TransactionsLinkedList;
+import ex03.UsersArrayList;
 
 public class Program {
     

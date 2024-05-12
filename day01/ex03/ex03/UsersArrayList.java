@@ -1,4 +1,5 @@
 
+package ex03;
 //questa classe implementa l'interfccia ed infatti ha tutti i metodi dell'interfaccia implementati.
 
 

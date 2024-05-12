@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import ex00.User;
+
 public class appLogic {
     public static void choseOptions()
     {

@@ -4,14 +4,21 @@
  * Si suol dire, a tal riguardo, che l'interfaccia è come un contratto.
  */
 
+ package ex03;
+
+
+
 interface UsersList {
     public void Add_user(User person);
     public User RetrieveUserById(Integer id) throws UserNotFoundException;
     public User RetrieveUserByIndex(Integer index);
     public Integer RetrieveNumberOfUsers();
+    
     public class UserNotFoundException extends RuntimeException {
-    public UserNotFoundException (String message){
+    
+        public UserNotFoundException (String message){
            super(message);
         }
     }
+    
 }

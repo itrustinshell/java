@@ -1,3 +1,5 @@
+import ex00.User;
+
 public class UsersArrayList implements UsersListInterface {
 
     User[] arrayUsers = new User[10];
