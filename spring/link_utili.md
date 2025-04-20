@@ -1,0 +1,3 @@
+- [my java repo](https://github.com/itrustinshell/java)
+- [lombok](https://github.com/itrustinshell/java/tree/main/librerie/lombok)
+- [maven](https://github.com/itrustinshell/java/tree/main/tools/maven)
