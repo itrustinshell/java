@@ -63,8 +63,6 @@ Questo è l'**elemento radice** del file `pom.xml`, e contiene informazioni che 
 - Serve per dire: "questo file segue le regole del POM (Project Object Model) versione 4.0.0".
 - C'è scritto `apache` perché **Maven è un progetto sviluppato dalla Apache Software Foundation**. [chicca dell'ordine inverso](ordineinverso.md)
 
----
-
 #### 🔹 `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"`
 
 - Abilita l'uso di **schema XML (XSD)** per validare la struttura del file.
