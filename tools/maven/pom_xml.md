@@ -56,14 +56,11 @@ AAA piccola chicca che non centra niente: La struttura maven.apache.org è un es
     - Java package names
     - Maven groupId
     - Namespace XML 
-
-Esempio concreto: maven.apache.org
+    Esempio concreto: maven.apache.org
     - org:	Dominio di primo livello (top-level domain)
     - apache: Organizzazione (Apache Software Foundation)
     - maven: Sottoprogetto di Apache
-
-Quindi:
-🔁 maven.apache.org → significa: "Maven, che fa parte della Apache Software Foundation, che è un’organizzazione non-profit a livello globale (org)".
+    Quindi:🔁 maven.apache.org → significa: "Maven, che fa parte della Apache Software Foundation, che è un’organizzazione non-profit a livello globale (org)".
 
 - xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	Abilita l'uso di schema XML (XSD) per validare la struttura del file.
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"	Indica dove trovare il file XSD (schema XML) per convalidare che il pom.xml sia scritto correttamente secondo le regole Maven.
