@@ -47,29 +47,59 @@ In breve, `pom.xml` definisce tutto il ciclo di vita del progetto.
 </project>
 ```
 
-## il tag <project></project>
+## 📁 Il tag `<project></project>`
 
-Questo è l'elemento radice del file pom.xml, e contiene informazioni che dicono: “Questo è un file XML valido secondo le regole di Maven”:
+Questo è l'**elemento radice** del file `pom.xml`, e contiene informazioni che dicono:
 
-- xmlns="http://maven.apache.org/POM/4.0.0"	Specifica il namespace XML di Maven. Serve per dire: "questo file segue le regole POM (Project Object Model) versione 4.0.0". C'è scritto apache perchè Maven è un progetto sviluppato dalla Apache Software Foundation. 
-AAA piccola chicca che non centra niente: La struttura maven.apache.org è un esempio di ordine inverso gerarchico, proprio come hai intuito. Ti spiego meglio. Cos'è l'ordine inverso? L'ordine inverso del dominio (reverse domain name) è un modo standard di scrivere identificatori univoci, molto usato in:
-    - Java package names
-    - Maven groupId
-    - Namespace XML 
+> “Questo è un file XML valido secondo le regole di Maven”.
 
-Esempio concreto: maven.apache.org
-    - org:	Dominio di primo livello (top-level domain)
-    - apache: Organizzazione (Apache Software Foundation)
-    - maven: Sottoprogetto di Apache 
-     
-Quindi:🔁 maven.apache.org → significa: "Maven, che fa parte della Apache Software Foundation, che è un’organizzazione non-profit a livello globale (org)".
+---
 
-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	Abilita l'uso di schema XML (XSD) per validare la struttura del file.
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"	Indica dove trovare il file XSD (schema XML) per convalidare che il pom.xml sia scritto correttamente secondo le regole Maven.
-🧠 In parole semplici
+### 📌 Attributi del tag `<project>`
 
-    Questa riga dice:
-    “Questo file è un pom.xml valido secondo Maven 4.0.0, e può essere validato con questo schema online”.
+#### 🔹 `xmlns="http://maven.apache.org/POM/4.0.0"`
 
-✅ Non devi mai modificarla. Maven la usa per capire come leggere e validare il tuo progetto.
+- Specifica il **namespace XML di Maven**.
+- Serve per dire: "questo file segue le regole del POM (Project Object Model) versione 4.0.0".
+- C'è scritto `apache` perché **Maven è un progetto sviluppato dalla Apache Software Foundation**.
 
+---
+
+### 💡 Chicca: l'ordine inverso gerarchico
+
+La struttura `maven.apache.org` è un esempio di **ordine inverso gerarchico** (reverse domain name), molto usato in:
+
+- Java package names
+- Maven `groupId`
+- Namespace XML
+
+#### 🔍 Esempio concreto: `maven.apache.org`
+
+| Livello | Significato |
+|---------|-------------|
+| `org`   | Dominio di primo livello (top-level domain) |
+| `apache` | Organizzazione (Apache Software Foundation) |
+| `maven` | Sottoprogetto di Apache |
+
+Quindi:  
+🔁 `maven.apache.org` → significa:  
+> "Maven, che fa parte della Apache Software Foundation, che è un’organizzazione non-profit a livello globale (org)".
+
+---
+
+#### 🔹 `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"`
+
+- Abilita l'uso di **schema XML (XSD)** per validare la struttura del file.
+
+#### 🔹 `xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"`
+
+- Indica **dove trovare il file XSD** (schema XML) per convalidare che il `pom.xml` sia scritto correttamente.
+
+---
+
+### 🧠 In parole semplici
+
+> Questa riga dice:  
+> “Questo file è un `pom.xml` valido secondo Maven 4.0.0, e può essere validato con questo schema online”.
+
+✅ **Non devi mai modificarla**. Maven la usa per capire come leggere e validare il tuo progetto.
