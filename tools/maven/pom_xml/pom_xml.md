@@ -1,6 +1,6 @@
 # Che cos'è `pom.xml`
 
-Il file `pom.xml` è il cuore di un progetto gestito con **[Apache Maven](maven.md)**, uno strumento di build molto usato nel mondo Java.
+Il file `pom.xml` è il cuore di un progetto gestito con **[Maven](../maven.md)**, uno strumento di build molto usato nel mondo Java (Maven è un progetto sviluppato dalla Apache Software Foundation, infatti puoi vederlo spesso scritto con "Apache Maven").
 
 Quindi il file pom.xml e' uno strumento nella "cassetta degli attrezzi" di Maven.
 
