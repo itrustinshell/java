@@ -65,7 +65,7 @@ Questo è l'**elemento radice** del file `pom.xml`, e contiene informazioni che 
 
 #### 🔹 `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"`
 
-- Abilita l'uso di **schema XML (XSD)** per validare la struttura del file.
+- Abilita l'uso di [**schema XML (XSD)**](xsd.md) per validare la struttura del file.
 
 #### 🔹 `xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"`
 
