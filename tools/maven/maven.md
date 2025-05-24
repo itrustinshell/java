@@ -15,7 +15,7 @@ In Java non tutto è incluso "di base", quindi ogni progetto spesso ha bisogno d
 - JUnit
 - ecc.
 
-Con Maven, ti basta scrivere il nome della libreria nel file [pom.xml](pom_xml.md), e lui:
+Con Maven, ti basta scrivere il nome della libreria nel file [pom.xml](pom_xml/pom_xml.md), e lui:
 
 - La scarica da internet (Maven Central)
 - La aggiunge al tuo progetto
