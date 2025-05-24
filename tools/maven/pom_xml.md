@@ -55,11 +55,13 @@ Questo è l'elemento radice del file pom.xml, e contiene informazioni che dicono
 AAA piccola chicca che non centra niente: La struttura maven.apache.org è un esempio di ordine inverso gerarchico, proprio come hai intuito. Ti spiego meglio. Cos'è l'ordine inverso? L'ordine inverso del dominio (reverse domain name) è un modo standard di scrivere identificatori univoci, molto usato in:
     - Java package names
     - Maven groupId
-    - Namespace XML  
+    - Namespace XML 
+
 Esempio concreto: maven.apache.org
     - org:	Dominio di primo livello (top-level domain)
     - apache: Organizzazione (Apache Software Foundation)
-    - maven: Sottoprogetto di Apache  
+    - maven: Sottoprogetto di Apache 
+     
 Quindi:🔁 maven.apache.org → significa: "Maven, che fa parte della Apache Software Foundation, che è un’organizzazione non-profit a livello globale (org)".
 
 - xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	Abilita l'uso di schema XML (XSD) per validare la struttura del file.
