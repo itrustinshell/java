@@ -21,6 +21,9 @@ Con Maven, ti basta scrivere il nome della libreria nel file [pom.xml](pom_xml.m
 - La aggiunge al tuo progetto
 - La tiene aggiornata
 
+Quindi, in Java, una **dipendenza** è una libreria esterna che il tuo progetto usa.  
+Esempio: se vuoi usare Spring Security, devi "dirlo" a Java, così può scaricarla e usarla.
+
 ---
 
 ### 2. Gestisce la compilazione
@@ -73,6 +76,9 @@ Se non la rispetti:
 
 ## Esempio concreto
 
+Come abbiamo già detto, in Java, una **dipendenza** è una libreria esterna che il tuo progetto usa.  
+Esempio: se vuoi usare Spring Security, devi "dirlo" a Java, così può scaricarla e usarla. Andiamo a fare un esempio con una dipendenza che si chiama spring-context (Spring-context è una libreria Java del framework Spring, e contiene: il contenitore IoC (Inversion of Control), gestione dei bean, iniezione di dipendenze, supporto per @Component, @Autowired, @Configuration, @Bean, ecc. Insomma, è il cuore del meccanismo di configurazione di Spring).
+
 Nel file `pom.xml`, scrivi:
 
 ```xml
@@ -82,6 +88,14 @@ Nel file `pom.xml`, scrivi:
     <version>5.3.30</version>
 </dependency>
 ```
+
+| Riga                  | Significato |
+|-----------------------|-------------|
+| `<dependency>`        | Stai dicendo "voglio usare una nuova libreria" |
+| `<groupId>`           | Il gruppo a cui appartiene la libreria (qui: Spring Boot) |
+| `<artifactId>`        | Il nome esatto della libreria (qui: spring-context) |
+| `</dependency>`       | Fine |
+
 
 Maven fa:
 
