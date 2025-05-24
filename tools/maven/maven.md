@@ -92,9 +92,16 @@ Nel file `pom.xml`, scrivi:
 | Riga                  | Significato |
 |-----------------------|-------------|
 | `<dependency>`        | Stai dicendo "voglio usare una nuova libreria" |
-| `<groupId>`           | Il gruppo a cui appartiene la libreria (qui: Spring Boot) |
-| `<artifactId>`        | Il nome esatto della libreria (qui: spring-context) |
+| `<groupId>`           | Il gruppo a cui appartiene la libreria, l'organizzazione che produce la libreria (qui: Spring Boot) |
+| `<artifactId>`        | Il nome esatto della libreria, il modulo/libreria specifica che vuoi usare (qui: spring-context) |
 | `</dependency>`       | Fine |
+
+Immagina Maven come un grande negozio di libri.
+
+Per trovare il libro giusto, ti servono:
+- groupId → il nome dell’editore (es: "Spring Framework")
+- artifactId → il titolo esatto del libro (es: "Spring Context")
+- version → l'edizione (es: 5ª edizione)
 
 
 Maven fa:
@@ -102,6 +109,7 @@ Maven fa:
 - Cerca Spring su internet
 - Lo scarica
 - Lo mette in automatico tra le librerie del tuo progetto
+
 
 ---
 
