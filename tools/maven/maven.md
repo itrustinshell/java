@@ -1,4 +1,4 @@
-# Guida semplice a Maven e primo progetto Spring
+# Maven: una guida semplice
 
 ## Cos'è Maven?
 
